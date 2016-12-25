@@ -1,0 +1,88 @@
+h1 Connect Four
+
+table
+  tbody
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+      td
+      td
+      td
+      td
+
+script src="js/game.js"
+
+css:
+  table {
+    overflow: hidden;
+  }
+
+  table, td {
+    border: 1px solid black;
+  }
+
+  td {
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+
+  td, th {
+    position: relative;
+  }
+
+  td:hover:after {
+    content: "";
+    position: absolute;
+    background-color: #ffa;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+  }
+
+
