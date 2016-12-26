@@ -50,6 +50,16 @@ ConnectFour = (function() {
   }
 
   ConnectFour.prototype.checkHorizontal = function() {
+    var rows = document.getElementsByTagName("tr");
+    for(var i = 0; i < rows.length ; i++) {
+      var column = rows[i].children
+      for(var j = 0; j < (column.length - 3) ; j++) {
+        if ((column[j].innerHTML != "") && (column[j].innerHTML === column[j + 1].innerHTML) && (column[j].innerHTML === column[j + 2].innerHTML) && (column[j].innerHTML === column[j + 3].innerHTML)) {
+          return true;
+        }
+      }
+
+    }
     return false;
   }
 
